@@ -1,0 +1,56 @@
+body {
+  background-color : #ffffff;
+  margin:auto;
+  width:100%;
+  font-style: normal;
+  font-weight: 500;
+  font-family: 'Montserrat', "Sans-serif";
+  list-style: none; 
+}
+
+main {
+  width: 86.11%;
+  margin: auto;
+  padding-bottom:20px;
+  margin-bottom:20px;
+}
+
+ul{
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration:none;
+}
+
+h1 {
+  font-style: normal;
+  font-family: 'Montserrat', "Sans-serif";
+  font-weight: 500;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  font-family: 'Montserrat', "Sans-serif";
+  font-style: normal;
+}
+
+h1, h2, h3, ul, p {
+  -webkit-margin-before :0px;
+          margin-block-start :0px;
+  -webkit-margin-after:0px;
+          margin-block-end:0px;
+}
+
+button {
+  background:none;
+  border:none;
+}
+
+@media (max-width: 600px) {
+  main {
+  width: 89.33%;
+  }
+}
