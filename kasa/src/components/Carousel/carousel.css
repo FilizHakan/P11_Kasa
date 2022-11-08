@@ -1,0 +1,172 @@
+.carousel { 
+    height: 800px;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    width: 100%;
+    margin: auto;
+}
+
+.carrousel__icon--right {
+    right: 0%;
+    top: 45%;
+    bottom: 37.24%;
+    position: absolute;
+    left: 92.26%;
+    cursor: pointer;
+}
+
+.carrousel__icon--left {
+    top: 45%;
+    bottom: 35.44%;
+    z-index: 50;
+    cursor: pointer;
+    position: absolute;
+    left: 0%;
+    right: 92.26%;
+}
+
+.carousel__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 800px;
+    border-radius: 25px;
+}
+
+.carousel__numbering {  
+    z-index: 50;
+    position: absolute;
+    left: 48.95%;
+    right: 49.11%;
+    top: 90%;
+    bottom: 6.01%;
+    font-family: "Montserrat";
+    font-style: normal;
+    color: #ffff;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+}
+
+@media (max-width: 1440px) {
+
+    .carousel { 
+        height: 415px;
+    }   
+
+    .carousel__img {
+        height: 415px;
+    }
+
+    .carousel__numbering {  
+        left: 48.95%;
+        right: 49.11%;
+        top: 86.19%;
+        bottom: 6.01%;
+    }
+
+    .carousel__icon--right {
+        top: 33.93%;
+    }
+
+    .carousel__icon--left {
+        top: 33.93%;
+    }
+}
+
+@media (max-width: 1120px) {
+
+    .carousel__icon--right {
+        left: 90%;
+    }
+
+}
+
+@media (max-width: 875px) {
+
+    .carousel__icon--right {
+        left: 86%;
+    }
+    
+}
+
+
+@media (max-width: 650px) {
+
+    .carousel__icon--left {
+        top: 40%;
+        width: 60px;
+    }
+    
+    .carousel__icon--right {
+        top: 40%;
+        width: 60px;
+    }
+    
+}
+
+@media (max-width: 600px) {
+
+    .carousel__numbering {  
+        display: none;
+}
+
+@media (max-width: 500px) {
+
+    .carousel__icon--right {
+        top: 45%;
+        width: 40px;
+        left: 88%;
+    }
+
+    .carousel__icon--left {
+        top: 45%;
+        width: 40px;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .carousel { 
+        width: 100%;
+        height: 255px;
+        margin-bottom: 15px;
+        margin-top: 27px;
+        border-radius: 10px;
+    }
+
+    .carousel__icon--right{
+        top: 45%;
+        width: 24px;
+        left: 92%;
+    }
+
+    .carousel__icon--left{
+        top: 45%;
+        width: 24px;
+    }
+
+    .carousel__img {
+        width: 100%;
+        height: 255px;
+        border-radius: 10px;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+}

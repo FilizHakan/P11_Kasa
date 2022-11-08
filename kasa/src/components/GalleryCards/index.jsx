@@ -6,7 +6,7 @@ function GalleryCards(props){
 
     return (
         <div className="galleryCards">
-            <Link to={`/housing/${props.item.id}`} key={props.item.id}>
+            <Link to={`P11_Kasa/housing/${props.item.id}`} key={props.item.id}>
                 <article className="card">                
                     <img className="thumbnail" src={props.item.cover} alt={props.item.title} />
                     <h2 className="title"> {props.item.title}</h2>
