@@ -3,7 +3,8 @@ import "./footer.css";
 
 // Create Footer for each page (desktop and mobile)
 
-function Footer() {
+function Footer() 
+{
   return (
     <footer>
       <img className="footer__img" src={logo_footer} alt="Kasa logo in the footer" />

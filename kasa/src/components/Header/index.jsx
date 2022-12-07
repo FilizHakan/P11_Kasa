@@ -2,7 +2,8 @@ import Logo from "../../assets/logo_header.png";
 import { NavLink } from "react-router-dom";
 import "./header.css";
 
-function Header() {
+function Header() 
+{
   return (
     <header>
         <img className="header__img" src={Logo} alt="Kasa logo" />

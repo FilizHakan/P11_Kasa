@@ -17,8 +17,8 @@ const Home = ()=>
     return (    
         <main>
             <Banner image={bannerHomePage} type="Home" />
-            {isLoading && <div className="loading">Chargement en cours...</div>}
-            {error && (<div className="errorMessage">Désolé, une erreur est survenue pendant le chargement de la page !</div>)}
+            {isLoading && <div className="loading">Keep calm and npm install...</div>}
+            {error && (<div className="errorMessage">Pas de panique, c'est juste une erreur !</div>)}
             {blogs && <Cards blogs={blogs}/>}
         </main>
     );

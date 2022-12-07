@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import arrowUp from "../../assets/arrow_closed.png";
 import "./collapse.css";
 
-const Collapse = () => 
+function Collapse() 
 {
     const [selected, setIsSelected] = useState(null);
     

@@ -34,7 +34,6 @@
 .cardLink:hover {
   transform: translateY(-7px) scale(1.007) translateZ(0);
   box-shadow: 0 24px 36px rgba(61, 47, 47, 0.372);
-  transition-duration: 600ms;
 }
 
 .cardImage {
@@ -54,6 +53,7 @@
   height: 340px;
   margin: 30px 10px;
   border-radius: 10px;
+  transition: all .3s ease-in-out;
 }
 
 .cardMask {

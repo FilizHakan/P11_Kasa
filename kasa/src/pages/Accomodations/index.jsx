@@ -1,26 +1,23 @@
 import React from "react";
-import { useParams } from "react-router";
-import Data from '../../data/data.json'
-
+import useFetch from "../../components/useFetch";
 import Carousel from "../../components/Carousel";
 import Content from '../../components/Content'
-import Error404 from "../Error404";
+import "./accomodations.css";
 
-function Accomodations()
+const Accomodations = (props) => 
 {
-    const { idAccomodations } = useParams();
-    const accomodations = Data.find((item) => item.id === idAccomodations)
+    const {
+        data: blogs,
+        error,
+        isLoading,
+    } = useFetch(`https://raw.githubusercontent.com/FilizHakan/P11_Kasa/main/kasa/src/data/data.json`);
 
-    if(!accomodations)
-    {
-        return(
-            <Error404/>
-        )
-    }
     return (
-        <div className="">
-            <Carousel images={accomodations?.pictures} />
-            <Content info={accomodations}/>
+        <div>
+            {blogs && <Carousel blogs={blogs} />}
+            {isLoading && <div className="loading">Keep calm and npm install...</div>}
+            {error && <div className="errorMessage">Pas de panique, c'est juste une erreur</div>}
+            {blogs && <Content blogs={blogs} />}
         </div>
     )
 }

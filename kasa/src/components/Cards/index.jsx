@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom'
 import './cards.css'
 
 // Create card, image and title for each gallery card
-const Cards = (props)=>
+function Cards({ props })
 {
     const card = props.blogs;
 

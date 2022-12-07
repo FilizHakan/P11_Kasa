@@ -1,6 +1,7 @@
 import "./banner.css";
 
-function Banner({ image, type }) {
+function Banner({ image, type }) 
+{
   return type === "Home" ? (
     <div className="bannerHome">
       <img src={image} alt="Homepage banner" />
