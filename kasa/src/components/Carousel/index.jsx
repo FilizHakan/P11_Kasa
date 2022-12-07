@@ -8,11 +8,11 @@ function Carousel({ props })
 {
     const { idAccomodation } = useParams();
 
-    const data = props.blogs.find((product)=> product.id === idAccomodation);
+    const accomodation = props.houses.find((product)=> product.id === idAccomodation);
 
     const [currentImage, setCurrent] = useState(0);
 
-    const slides = data
+    const slides = accomodation
         .map((slide)=> slide.images)
         .map((image)=> image = image.length);
 
@@ -36,13 +36,13 @@ function Carousel({ props })
     return (
     <div className="carouselContainer">
         <div className="carouselImage">\
-            {data.map((slide, index)=>
+            {accomodation.map((slide, index)=>
             {
                 return slide.images.map((image, index)=> (
                     <div className={index === currentImage ? "activeSlides" : "slides"} key={index}
-                    >{index === current && 
+                    >{index === currentImage && 
                         <img src={image} alt={image} className="product" key={image} style={{width: `170%`,}}
-                        />}
+                        />} 
                     </div>
                 ))
             })}
