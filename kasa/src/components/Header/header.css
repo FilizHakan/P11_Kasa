@@ -27,9 +27,43 @@ header {
   list-style: none;
 }
 
-.header__item:hover {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+header ul a li {
+  transition: 0.3s;
+}
+
+header ul a li:hover {
+  transition: 0.7s;
+  color: #FF3047;
+}
+
+header ul .nav-active {
+  position: relative;
+}
+
+header ul .nav-active::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  background: #FF6060;
+  position: absolute;
+  border-radius: 10px;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-animation: navigation 0.2s ease forwards;
+  animation: navigation 0.5s ease forwards;
+}
+
+@-webkit-keyframes navigation {
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes navigation {
+  to {
+    width: 100%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -75,12 +109,25 @@ header {
   @media (max-width: 400px) {
     
     .header__img {
-      width: 145px;
-      height: 47px;
+      width: 120px;
+      height: 40px;
     }
 
     .header__item {
       font-size: 12px;
+    }
+    
+  }
+
+  @media (max-width: 320px) {
+    
+    .header__img {
+      width: 80px;
+      height: 25px;
+    }
+
+    .header__item {
+      font-size: 11px;
     }
     
   }

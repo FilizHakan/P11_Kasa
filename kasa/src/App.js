@@ -7,26 +7,25 @@ import {
 
 import About from "./pages/About"
 import Home from "./pages/Home";
-import Housing from "./pages/Housing";
+import Accomodations from "./pages/Accomodations";
+import Error404 from "./pages/Error404";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Error from "./pages/Error";
+
 
 function App() 
 {
+
   return (
     <Router>
       <Header />
       <Routes>
-        <Route exact path="/" element={<Home />}/>
-        <Route path="/accueil" element={<Home />} />
-        <Route exact path="/about" element={<About />} />
-        <Route exact path="/housing/:id" element={<Housing />} />
-        <Route exact path="/housing/:id" element={<Error />} />
-        <Route exact path="/*" element={<Error />} />
+        <Route path="/" element={<Home />}/>
+        <Route path="/about" element={<About />} />
+        <Route path="/accomodations/:id" element={<Accomodations />} />
+        <Route path="*" element={<Error404 />} />
       </Routes>
-      
       <Footer />
     </Router>
   );

@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import "./carousel.css";
-import arrowRight from "../../assets/arrowRight";
-import arrowLeft from "../../assets/arrowLeft";
+import arrowLeft from "../../assets/arrow_left.png";
+import arrowRight from "../../assets/arrow_right.png";
 
 function Carousel({ images })
 {
@@ -42,5 +42,6 @@ function Carousel({ images })
             </div>
         )
     }
-
 }
+
+export default Carousel;

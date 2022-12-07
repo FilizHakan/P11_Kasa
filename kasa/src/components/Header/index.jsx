@@ -1,21 +1,24 @@
-import logo from "../../assets/logo_header.png";
-import { Link } from "react-router-dom";
+import Logo from "../../assets/logo_header.png";
+import { NavLink } from "react-router-dom";
 import "./header.css";
 
 function Header() {
   return (
     <header>
-      <img className="header__img" src={logo} alt="Kasa logo" />
-      <nav>
-        <ul className="header__list">
-          <Link to="/P11_Kasa">
-            <li className="header__item">Accueil</li>
-          </Link>
-          <Link to="/P11_Kasa/a_propos">
-            <li className="header__item">À propos</li>
-          </Link>
-        </ul>
-      </nav>
+        <img className="header__img" src={Logo} alt="Kasa logo" />
+          <ul className="header__list">
+            <NavLink 
+            to="/"
+            className={(nav)=> (nav.isActive ? "nav-active":"") }
+            >
+              <li className="header__item">Accueil</li>
+            </NavLink>
+            <NavLink to="/about"
+            className={(nav)=> (nav.isActive ? "nav-active":"")}
+            >
+              <li className="header__item">À propos</li>
+            </NavLink>
+          </ul>
     </header>
   );
 }

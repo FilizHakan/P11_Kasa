@@ -1,0 +1,11 @@
+.errorMessage,
+.loading {
+    color: #ff0026;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    height: 110vh;
+    margin: 70px auto;
+}
