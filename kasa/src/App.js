@@ -16,12 +16,11 @@ import Footer from "./components/Footer";
 
 function App() 
 {
-
   return (
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />}/>
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/accomodations/:id" element={<Accomodations />} />
         <Route path="*" element={<Error404 />} />

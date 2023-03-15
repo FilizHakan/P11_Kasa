@@ -1,28 +1,25 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import fullStar from "../../assets/star_full.png";
-import emptyStar from "../../assets/star_empty.png";
+import Ratings from "../Ratings"
 
-function Content({ props })
+function Content({houses, rateNumber})
 {
-    const {accomodationId } = useParams();
+    const { id } = useParams();
 
-    const accomodation = props.houses.find((product)=> product.id === accomodationId);
-    const ratings = accomodation.map((e)=> e.rating);
-    const counting = parseInt(ratings, 5);
-    
+    const accomodationData = houses.filter((product)=> product.id === id);
+
     return (
         <div className="contentContainer">
             <div className="contentInfo">
-                {accomodation.map((house)=>
-                    <div className="PageTitle" key={house.id}>
-                        <div className="Countrytitle">
-                            <h4 className="AccomodationTitle">{house.title}</h4>
+                {accomodationData.map((house)=>
+                    <div className="pageTitle" key={house.id}>
+                        <div className="countrytitle">
+                            <h4 className="accomodationTitle">{house.title}</h4>
                             <p className="city">{house.location}</p>
                         </div>
                         <div className="tags">
                             <ul className="tagLists">
-                                {accomodation.map((tags)=>
+                                {accomodationData.map(({tags})=>
                                 {
                                     return tags.map((tag)=>
                                     {
@@ -36,35 +33,14 @@ function Content({ props })
                     </div>
                 )}
                 <div className="hostContainer">
-                    {accomodation.map((house)=>
-                        <div className="hostIdentity" key={house.host.name}>
+                    {accomodationData.map((house)=>
+                        <div className="hostInfo" key={house.host.name}>
                             <p className="hostName">{house.host.name}</p>
                             <img className="hostPicture" src={house.host.picture} alt={house.host.picture} />
                         </div>
                     )}
-
-                    <div className="ratingContainer">
-                        <div className="ratings">
-                            <div className="starRatings">
-                                {[...Array(counting)].map((starF, index)=>
-                                {
-                                    return (
-                                        <img className="fullStar" alt="" key={index} src={fullStar} />
-                                    )
-                                })}
-                            </div>
-
-                            <div className="starRatings">
-                                {[...Array(counting)].map((starE, index)=>
-                                    {
-                                        return (
-                                            <img className="emptyStar" alt="" key={index} src={emptyStar} />
-                                        )
-                                })}
-                            </div>
-                        </div>
-                    </div>
                 </div>
+                <Ratings rating={rateNumber} />
             </div>
         </div>
     )

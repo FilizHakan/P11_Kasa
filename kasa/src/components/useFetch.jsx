@@ -17,7 +17,7 @@ const useFetch = (url)=>
                 {
                     if(!response.ok)
                     {
-                        throw Error("Désolé, une erreur est survenue pendant le chargement de la page !");
+                        throw Error("Pas de panique, c'est juste une erreur");
                     }
                     return response.json();
                 })
@@ -33,7 +33,7 @@ const useFetch = (url)=>
                     setError(err.message);
                     setIsLoading(false);
                 });
-        }, 1000);       
+        }, 1500);       
     }, [url] );
 
     return { data, error, isLoading };

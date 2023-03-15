@@ -1,0 +1,23 @@
+.ratingContainer {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    -webkit-padding-start: 0px;
+            padding-inline-start: 0px; 
+    justify-content: flex-end;
+}
+
+@media (max-width: 480px) {
+    .ratingContainer {
+        width: 100px;
+        height: 20px;
+    }
+
+    .ratingContainer img {
+        width: 20px;
+    }
+}
+
+
+

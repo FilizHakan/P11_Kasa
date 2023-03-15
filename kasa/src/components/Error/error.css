@@ -1,5 +1,5 @@
 .errorContainer {
-    margin: 30% auto;
+    margin: 2% auto;
 }
 
 .errorTitle {
@@ -29,9 +29,31 @@
     font-size: 36px;
     font-weight: 500;
     justify-content: center;
+    margin-bottom: 147px;
+}
+@media only screen and (max-width: 2560px) {
+    .errorContainer {
+        margin: 30% auto;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .errorContainer {
+        margin: 18% auto;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .errorContent {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 819px) {
+    .errorContainer {
+        margin: 18% auto;
+    }
+
     .errorTitle {
         font-size: 96px;
     }
@@ -46,9 +68,10 @@
 
 }
 
-@media only screen and (max-width: 960px) {
-    .errorContent {
-        text-align: center;
+
+@media only screen and (max-width: 420px) {
+    .errorContainer {
+        margin: 30% auto;
     }
 }
 

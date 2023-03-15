@@ -1,13 +1,13 @@
 import React from "react";
 import Error from "../../components/Error";
 
-function Page404() {
+function Error404() {
   return (
-    <div>
+    <main>
       <Error />     
-    </div>
+    </main>
   );
 };
 
 
-export default Page404;
+export default Error404;

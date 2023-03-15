@@ -1,0 +1,164 @@
+.contentContainer {
+    width: 100%;
+    margin-top: 55px;
+    width: 100%;
+}
+
+.contentInfo {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.pageTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    width: 100%;
+}
+
+.countryTitle {
+    width: 100%;
+}
+
+.accomodationTitle {
+    width: 100%;
+    font-size: 36px;
+    color: #ff6060;
+}
+
+.city {
+    width: 100%;
+    color: #ff6060;
+    font-weight: 500;
+}
+
+.tags {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.taglists {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: 100%;
+}
+
+.tagName {
+    line-height: 25px;
+    text-align: center;
+    border-radius: 25px;
+    margin-top: 10px;
+    background-color: #ff6060;
+    margin-right: 20px;
+    margin-top: 25px;
+    list-style: none;
+    width: auto;
+    height: 25px;
+    padding: 0 10px;
+}
+
+.hostContainer {
+    width: 30%;
+}
+
+.hostInfo {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hostName {
+    display: flex;
+    width: 100%;
+    text-align: right;
+    color:#ff6060;
+    font-size: 18px;
+    margin-right: 20px;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.hostPicture {
+    display: flex;
+    width: 64px;
+    border-radius: 50%;
+    height: 64px;
+}
+
+@media only screen and (max-width: 1005px)
+{
+    .contentInfo {
+        flex-direction: column;
+    }
+
+    .hostContainer {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 15px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .accomodationTitle {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .tags {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 615px) {
+    .accomodationTitle {
+        font-size: 22px;
+    }
+
+    .tagName {
+        font-size: 12px;
+        height: 15px;
+        line-height: 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hostName {
+        font-size: 12px;
+    }
+
+    .hostPicture {
+        height: 32px;
+        width: 32px;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .accomodationTitle {
+        font-size: 18px;
+    }
+
+    .tagName {
+        font-size: 10px;
+    }
+
+    .hostPicture {
+        width: 32px;
+        height: 32px;
+    }
+
+}
+
+
+

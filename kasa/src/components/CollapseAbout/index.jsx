@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import arrowUp from "../../assets/arrow_closed.png";
 import "./collapseAbout.css";
 
-function Collapse() 
+function CollapseAbout() 
 {
     const [selected, setIsSelected] = useState(null);
     
@@ -14,26 +14,6 @@ function Collapse()
         }
         setIsSelected(e)
     } 
-
-    return (
-        <div className="collapseAbout">
-            <div className="containerAbout">
-                {sectionAbout.map((item, e) => (
-                    <div className="item" key={item.title}>
-                        <div className="title" onClick={() => toggle(e)}>
-                            <h2>{item.title}</h2>
-                            <img className="arrowUp" src={arrowUp} style={{transition: "0.2s", transform: selected === e ? "rotate(-180deg)": null}} alt="arrow up" /> 
-                        </div>
-
-                        <div className={selected === e ? "show content" : "content"} key={e.content} >
-                            {item.content}
-                        </div>
-                    </div>
-                ))}
-            </div>
-        </div>
-    )   
-}
 
     const sectionAbout = [
         {
@@ -58,4 +38,24 @@ function Collapse()
         },
       ];
 
-export default Collapse;
+    return (
+        <div className="collapseAbout">
+            <div className="containerAbout">
+                {sectionAbout.map((item, e) => (
+                    <div className="item" key={item.title}>
+                        <div className="title" onClick={() => toggle(e)}>
+                            <h2>{item.title}</h2>
+                            <img className="arrowUp" src={arrowUp} style={{transition: "0.5s", transform: selected === e ? "rotate(-180deg)": null}} alt="arrow up" /> 
+                        </div>
+
+                        <div className={selected === e ? "show content" : "content"} key={e.content} >
+                            {item.content}
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    )   
+}
+
+export default CollapseAbout;

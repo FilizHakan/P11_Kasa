@@ -16,8 +16,8 @@ function Home()
 
     return (    
         <main>
-            {isLoading && <div className="loading">Keep calm and npm install...</div>}
             <Banner image={bannerHomePage} type="Home" />
+            {isLoading && <div className="loading">Keep calm and npm install...</div>}
             {error && (<div className="errorMessage">Pas de panique, c'est juste une erreur !</div>)}
             {houses && <Cards houses={houses}/>}
         </main>

@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 import './cards.css';
 
 // Create card, image and title for each gallery card
-function Cards({ houses })
+function Cards({houses})
 {
     return (
         <div className="gallery">

@@ -1,0 +1,119 @@
+.collapseContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.collapseItem {
+    width: 90%;
+    justify-content: space-between;
+    height: 100%;
+    margin: 30px auto;
+    display: flex;
+}
+
+.buttonMask {
+    width: 45%;
+    height: auto;
+}
+
+.collapseAccomodationBtn {
+    cursor: pointer;
+    border-style: none;
+    border-radius: 25px;
+    background-color: #ff6060;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.arrowDown {
+    width: 16px;
+    height: 26px;
+}
+
+.arrowDown,
+.description p,
+.equipments p {
+    background-color: #ff6060;
+}
+
+.description,
+.equipments {
+    display: flex;
+    width: 95%;
+    color: #ffffff;
+    background-color: #ff6060;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.descriptionContent p {
+    display: flex;
+    color: #ff6060;
+    background-color: #f6f6f6;
+    font-size: 18px;
+    padding: 20px 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 10px 10px;
+}
+
+.equipmentsContent {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #f6f6f6;
+    border-radius: 0 0 10px 10px;
+}
+
+.equipmentsContent li {
+    font-size: 18px;
+    list-style: none;
+    color: #ff6060;
+    padding: 0 20px;
+    background-color: #f6f6f6;
+}
+
+.equipmentsList {
+    background-color: #f6f6f6;
+    padding: 0 20px;
+    border-radius: 0 0 0 10px;
+}
+
+@media only screen and (max-width: 660px) {
+    .collapseAccomodationBtn {
+        height: 30px;
+    }
+    
+    .description,
+    .equipements {
+        align-items: center;
+        font-size: 13px;
+    }
+
+    .descriptionContent p {
+        font-size: 12px;
+    }
+
+    .equipmentsContent li {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .collapseItem {
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        margin: 10px auto;
+        display: flex;
+    }
+
+    .buttonMask {
+        width: 100%;
+        margin: 10px;
+    }
+}
