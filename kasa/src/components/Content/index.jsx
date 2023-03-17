@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import Ratings from "../Ratings"
+import "./content.css";
 
 function Content({houses, rateNumber})
 {
