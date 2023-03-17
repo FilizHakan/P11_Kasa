@@ -1,5 +1,4 @@
-.errorMessage,
-.loading {
+.errorMessage {
     color: #ff6060;
     display: flex;
     width: 90%;
@@ -8,4 +7,35 @@
     font-weight: bold;
     height: 110vh;
     margin: 100px auto;
+}
+
+.loader {
+    padding: 10px;
+    border: 6px solid #ff6060;
+    border-bottom-color: transparent;
+    border-radius: 22px;
+    height: 0;
+    width: 0;
+    text-align: center;
+    -webkit-animation: rotate 1s infinite linear;
+            animation: rotate 1s infinite linear;
+}
+
+
+@-webkit-keyframes rotate {
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
 }
