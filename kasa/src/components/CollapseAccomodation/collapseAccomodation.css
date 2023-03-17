@@ -5,7 +5,7 @@
 }
 
 .collapseItem {
-    width: 90%;
+    width: 100%;
     justify-content: space-between;
     height: 100%;
     margin: 30px auto;
@@ -17,7 +17,7 @@
     height: auto;
 }
 
-.collapseAccomodationBtn {
+.collapseAccomodationBtn .collapseAccomodationBtn2 {
     cursor: pointer;
     border-style: none;
     border-radius: 25px;

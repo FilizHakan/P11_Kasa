@@ -42,7 +42,7 @@ function Carousel({houses})
                 return slide.pictures.map((image, index)=> (
                     <div className={index === currentImage ? "activeSlides" : "slides"} key={index}
                     >{index === currentImage && 
-                        <img src={image} alt={image} className="product" key={image} style={{width: `190%`,}}
+                        <img src={image} alt={image} className="product" key={image}
                         />} 
                     </div>
                 ))

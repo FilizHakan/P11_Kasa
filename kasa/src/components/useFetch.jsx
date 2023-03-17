@@ -5,7 +5,7 @@ const useFetch = (url)=>
     // Use hooks with useState (re-display) and useEffect
     const [data, setData] =useState(null);
     const [error, setError] = useState(null);
-    const [isLoading, setIsLoading] = useState(true);
+    const [isDataLoading, setDataLoading] = useState(true);
 
     // useEffect is executed when page is displayed
     useEffect(()=>
@@ -24,19 +24,19 @@ const useFetch = (url)=>
                 .then((data)=>
                 {
                     setData(data);
-                    setIsLoading(false);
+                    setDataLoading(false);
                     setError(null);
                 })
                 .catch((err)=>
                 {
                     console.log(err.message);
                     setError(err.message);
-                    setIsLoading(false);
+                    setDataLoading(false);
                 });
         }, 1500);       
     }, [url] );
 
-    return { data, error, isLoading };
+    return { data, error, isDataLoading };
 };
     
 export default useFetch;

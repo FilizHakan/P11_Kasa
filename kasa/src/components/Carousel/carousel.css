@@ -1,19 +1,20 @@
 .carouselContainer { 
-    height: 600px;
-    border-radius: 25px;
-    margin-bottom: 30px;
+    height: 800px;
     width: 100%;
     margin: auto;
+    overflow: hidden;
+    border-radius: 25px;
+    position: relative;    
 }
 
 .carouselImage {
-    position: relative;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    margin: 0 auto;
+    position: absolute;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
-    height: 600px;
+    height: 800px;
+    top: 0%;
+    left: 0%;
     border-radius: 25px;
 }
 
@@ -23,93 +24,177 @@
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-    background-color: #11ffee00;
-    display: flex;
-    position: absolute;
+    background-color: #10121200;
     justify-content: space-between;
-    padding: 0 23px;
+    display: flex;
     width: 100%;
-    height: 18%;   
+    height: 12%;   
+    top: 45%;
+    position: absolute;
 }
 
-@media only screen and (max-width: 1170px) {
-    .carouselImage {
-        height: 100%;
-        max-height: 260px;
-    }
+.rightArrow {
+    padding-right: 15px;
 }
-    
 
-@media only screen and (max-width: 560px) {
-    .arrows {
-        padding: 0 10px;
-        height: 10%;
-    }
+.leftArrow {
+    padding-left: 15px;
 }
 
 .rightArrow,
 .leftArrow {
-    background-color: #11ffee00;
-    opacity: .5;
+    background-color: #0c090900;
+    opacity: .7;
     cursor: pointer;
+    transition: transform 0.5s ease;
 }
 
-.rightArrow.leftArrow:hover {
+.rightArrow:hover,
+.leftArrow:hover {
     cursor: pointer;
     opacity: 1;
-}
-
-.rightArrow {
-    right: 0%;
-    top: 45%;
-    bottom: 37.24%;
-    position: absolute;
-    left: 92.26%;
-    cursor: pointer;
-}
-
-.leftArrow {
-    top: 45%;
-    bottom: 35.44%;
-    z-index: 50;
-    cursor: pointer;
-    position: absolute;
-    left: 1.54%;
-    right: 92.26%;
+    transform: scale(1.2);
 }
 
 .carouselIndex {  
+    z-index: 50;
     font-weight: 500;
-    background-color: #11ffee00;
+    background-color: #0d0e0d00;
     color: #ffffff;
     position: absolute;
-    display: flex;
     width: 100%;
-    bottom: 25px;
+    left: 48.95%;
+    line-height: 142.6%;
+    top: 93%;
+    right: 49.11%;
+    bottom: 6.01%;
     justify-content: center;
-    font-size: 18px;
+    font-size: 26px;
 }
 
 .carouselMask {
     position: absolute;
+    opacity: 0.05;
+    border-radius: 25px;
     width: 100%;
-    height: 100%;
+    height: auto;
     border-radius: 10px;
     background: #000000;
     mix-blend-mode: darken;
-    opacity: 0.05;
     border-radius: 25px;
 }
 
 .product {
-    display: flex;
-    min-height: 255px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: 50% -10px;
-       object-position: 50% -10px;
-    margin: 0 auto;
     width: 100%;
-    height: auto;
+    border-radius: 25px;
+}
+
+@media only screen and (max-width: 1440px) {
+    .arrows {
+        top: 88%;
+        height: 13%;
+    }
+
+    .carouselIndex {
+        top: 130%;
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+    .carouselImage {
+        height: 555px;
+        top: 0;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 1024px)
+{
+    .arrows {
+        top: 45%;
+        height: 13%;
+    }
+
+    .carouselIndex {
+        top: 95%;
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .arrows {
+        top: 35%;
+        height: 10%;
+    }
+
+    .carouselIndex {
+        top: 73%;
+        font-size: 15px;
+    }
+
+    .carouselContainer {
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .arrows {
+        top: 18%;
+        height: 10%;
+    }
+
+    .carouselIndex {
+        top: 35%;
+        font-size: 13px;
+    }
+
+}
+
+@media only screen and (max-width: 426px) {
+    .arrows {
+        top: 17.5%;
+        height: 8.5%;
+    }
+
+    .carouselIndex {
+        top: 40%;
+        font-size: 13px;
+    }
+
+    .carouselContainer {
+        height: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 376px) {
+    .arrows {
+        top: 15%;
+        height: 7%;
+    }
+
+    .carouselIndex {
+        top: 35%;
+        font-size: 14px;
+    }
+
+    .carouselContainer {
+        height: 200px;
+    }
+
+}
+
+@media only screen and (max-width: 321px) {
+    .arrows {
+        top: 13%;
+        height: 6%;
+    }
+
+    .carouselIndex {
+        top: 30%;
+        font-size: 13px;
+    }
+
 }
 
