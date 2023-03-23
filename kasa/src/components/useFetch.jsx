@@ -33,7 +33,7 @@ const useFetch = (url)=>
                     setError(err.message);
                     setDataLoading(false);
                 });
-        }, 1500);       
+        }, 500);       
     }, [url] );
 
     return { data, error, isDataLoading };

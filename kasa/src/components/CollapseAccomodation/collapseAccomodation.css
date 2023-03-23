@@ -9,28 +9,25 @@
     justify-content: space-between;
     height: 100%;
     margin: 30px auto;
-    display: flex;
+    display: flex
 }
 
 .buttonMask {
-    width: 45%;
+    width: 47%;
     height: auto;
 }
 
-.collapseAccomodationBtn .collapseAccomodationBtn2 {
+.collapseAccomodationBtn, 
+.collapseAccomodationBtn2 {
     cursor: pointer;
     border-style: none;
-    border-radius: 25px;
+    border-radius: 5px;
     background-color: #ff6060;
     display: flex;
+    height: 52px;
     align-items: center;
     margin: 0 auto;
     width: 100%;
-}
-
-.arrowDown {
-    width: 16px;
-    height: 26px;
 }
 
 .arrowDown,
@@ -42,11 +39,11 @@
 .description,
 .equipments {
     display: flex;
-    width: 95%;
+    width: 100%;
     color: #ffffff;
     background-color: #ff6060;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 30px 15px;
     font-size: 18px;
 }
 
@@ -54,11 +51,11 @@
     display: flex;
     color: #ff6060;
     background-color: #f6f6f6;
-    font-size: 18px;
-    padding: 20px 20px;
-    width: 100%;
+    font-size: 17px;
+    padding: 20px;
     height: auto;
     border-radius: 0 0 10px 10px;
+    line-height: 27px;
 }
 
 .equipmentsContent {
@@ -67,13 +64,13 @@
     height: auto;
     background-color: #f6f6f6;
     border-radius: 0 0 10px 10px;
+    line-height: 27px;
 }
 
 .equipmentsContent li {
-    font-size: 18px;
+    font-size: 17px;
     list-style: none;
     color: #ff6060;
-    padding: 0 20px;
     background-color: #f6f6f6;
 }
 
@@ -83,25 +80,6 @@
     border-radius: 0 0 0 10px;
 }
 
-@media only screen and (max-width: 660px) {
-    .collapseAccomodationBtn {
-        height: 30px;
-    }
-    
-    .description,
-    .equipements {
-        align-items: center;
-        font-size: 13px;
-    }
-
-    .descriptionContent p {
-        font-size: 12px;
-    }
-
-    .equipmentsContent li {
-        font-size: 12px;
-    }
-}
 
 @media only screen and (max-width: 900px) {
     .collapseItem {
@@ -115,5 +93,26 @@
     .buttonMask {
         width: 100%;
         margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .collapseAccomodationBtn,
+    .collapseAccomodationBtn2 {
+        height: 30px;
+    }
+    
+    .description,
+    .equipments {
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .descriptionContent p {
+        font-size: 12px;
+    }
+
+    .equipmentsContent li {
+        font-size: 12px;
     }
 }

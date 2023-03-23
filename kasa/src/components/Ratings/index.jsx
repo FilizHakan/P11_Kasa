@@ -16,8 +16,8 @@ function Ratings ({ rating })
 
      return (
         <ul className="ratingContainer">
-            {arrayStars.map((star, index)=>
-                <li key={index}>{star}</li> 
+            {arrayStars.map((star, i)=>
+                <li key={i}>{star}</li> 
             )}
         </ul>
 

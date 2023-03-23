@@ -1,22 +1,14 @@
 .contentContainer {
     width: 100%;
-    margin-top: 55px;
-    width: 100%;
+    height: auto;
+    margin-top: 35px;
 }
 
 .contentInfo {
     display: flex;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     height: auto;
-}
-
-.pageTitle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 45px;
-    width: 100%;
 }
 
 .countryTitle {
@@ -35,6 +27,14 @@
     font-weight: 500;
 }
 
+.pageTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
 .tags {
     display: flex;
     width: 100%;
@@ -43,25 +43,25 @@
     justify-content: space-between;
 }
 
-.taglists {
+.tagLists {
     display: flex;
     flex-direction: row;
     width: 100%;
-    flex-wrap: 100%;
+    flex-wrap: wrap;
 }
 
 .tagName {
     line-height: 25px;
     text-align: center;
-    border-radius: 25px;
+    border-radius: 5px;
     margin-top: 10px;
     background-color: #ff6060;
     margin-right: 20px;
-    margin-top: 25px;
     list-style: none;
     width: auto;
     height: 25px;
     padding: 0 10px;
+    color: white;
 }
 
 .hostContainer {
@@ -93,6 +93,7 @@
     border-radius: 50%;
     height: 64px;
 }
+
 
 @media only screen and (max-width: 1005px)
 {
@@ -146,7 +147,11 @@
 
 @media only screen and (max-width: 490px) {
     .accomodationTitle {
-        font-size: 18px;
+        font-size: 26px;
+    }
+
+    .contentContainer {
+        margin-top: 10px;
     }
 
     .tagName {
@@ -158,7 +163,20 @@
         height: 32px;
     }
 
-}
+    .tags {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 
+    .city {
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    .hostContainer {
+        margin-top: 0;
+    }
+
+}
 
 

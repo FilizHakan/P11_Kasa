@@ -32,7 +32,7 @@ function CollapseAccomodation({houses})
                         <button className={`collapseAccomodationBtn ${buttonState}`} onClick={click1}>
                             <div className="description">
                                 <p className="descriptionTitle">Description</p>
-                                <img className="arrowDown" alt="arrow collapse" src={arrowDown} style={{transform: selected1 ? "rotate(-180deg": null, transition: ".2s",}} />
+                                <img className="arrowUp" alt="arrow1 collapse" src={arrowUp} style={{transform: selected1 ? "rotate(-180deg": null, transition: ".3s",}} />
                             </div>
                         </button>
                         <div className="descriptionContent">
@@ -44,8 +44,8 @@ function CollapseAccomodation({houses})
                         <div className="collapseEquipments">
                             <button className={`collapseAccomodationBtn2 ${buttonState}`} onClick={click2}>
                                 <div className="equipments">
-                                    <p className="equipmentsTitle">Equipements</p>
-                                    <img className="arrowUp" alt="arrow2 collapse" src={arrowUp} style={{transform: selected2 ? "rotate(-180deg": null, transition: ".2s",}} />
+                                    <p className="equipmentsTitle">Équipements</p>
+                                    <img className="arrowUp" alt="arrow2 collapse" src={arrowUp} style={{transform: selected2 ? "rotate(-180deg": null, transition: ".3s",}} />
                                 </div>
                             </button>
                             {selected2 ? (

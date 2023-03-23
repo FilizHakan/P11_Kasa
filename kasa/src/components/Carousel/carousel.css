@@ -4,7 +4,7 @@
     margin: auto;
     overflow: hidden;
     border-radius: 25px;
-    position: relative;    
+    position: relative; 
 }
 
 .carouselImage {
@@ -13,8 +13,8 @@
        object-fit: cover;
     width: 100%;
     height: 800px;
-    top: 0%;
-    left: 0%;
+    top: 0;
+    left: 0;
     border-radius: 25px;
 }
 
@@ -28,8 +28,8 @@
     justify-content: space-between;
     display: flex;
     width: 100%;
-    height: 12%;   
-    top: 45%;
+    height: 17%;   
+    top: 75%;
     position: absolute;
 }
 
@@ -65,11 +65,11 @@
     width: 100%;
     left: 48.95%;
     line-height: 142.6%;
-    top: 93%;
+    top: 145%;
     right: 49.11%;
     bottom: 6.01%;
     justify-content: center;
-    font-size: 26px;
+    font-size: 20px;
 }
 
 .carouselMask {
@@ -87,37 +87,53 @@
 .product {
     width: 100%;
     border-radius: 25px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-@media only screen and (max-width: 1440px) {
-    .arrows {
-        top: 88%;
-        height: 13%;
+@media only screen and (max-width: 2560px) {
+    .carouselImage {
+        height: 480px;
+        top: 0;
+        margin-top: 30px;
+        margin-bottom: 20px;
     }
 
-    .carouselIndex {
-        top: 130%;
-        font-size: 28px;
+    .product {
+        height: 800px;
     }
 }
 
 @media only screen and (max-width: 1170px) {
     .carouselImage {
-        height: 555px;
+        height: 480px;
         top: 0;
         margin-top: 30px;
         margin-bottom: 20px;
     }
+
+    .product {
+        height: 600px;
+    }
+
 }
+
 @media only screen and (max-width: 1024px)
 {
-    .arrows {
+    .carouselContainer { 
+        height: 500px;   
+    }
+
+        .arrows {
         top: 45%;
         height: 13%;
     }
 
     .carouselIndex {
-        top: 95%;
+        top: 85%;
         font-size: 22px;
     }
 }
@@ -134,7 +150,11 @@
     }
 
     .carouselContainer {
-        height: 500px;
+        height: 430px;
+    }
+
+    .product {
+        height: 400px;
     }
 }
 
@@ -145,20 +165,24 @@
     }
 
     .carouselIndex {
-        top: 35%;
+        top: 25%;
         font-size: 13px;
+    }
+
+    .product {
+        height: 350px;
     }
 
 }
 
 @media only screen and (max-width: 426px) {
     .arrows {
-        top: 17.5%;
+        top: 23.5%;
         height: 8.5%;
     }
 
     .carouselIndex {
-        top: 40%;
+        top: 48%;
         font-size: 13px;
     }
 
@@ -166,16 +190,24 @@
         height: 300px;
     }
 
+    .product {
+        height: 260px;
+    }
+
+    .contentContainer {
+        margin-top: 5px;
+    }
+
 }
 
 @media only screen and (max-width: 376px) {
     .arrows {
-        top: 15%;
+        top: 13%;
         height: 7%;
     }
 
     .carouselIndex {
-        top: 35%;
+        top: 29%;
         font-size: 14px;
     }
 
@@ -183,16 +215,20 @@
         height: 200px;
     }
 
+    .product {
+        height: 170px;
+    }
+
 }
 
 @media only screen and (max-width: 321px) {
     .arrows {
         top: 13%;
-        height: 6%;
+        height: 4%;
     }
 
     .carouselIndex {
-        top: 26%;
+        top: 25%;
         font-size: 13px;
     }
 
