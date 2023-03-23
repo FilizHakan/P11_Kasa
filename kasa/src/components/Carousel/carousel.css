@@ -133,19 +133,19 @@
     }
 
     .carouselIndex {
-        top: 85%;
+        top: 88%;
         font-size: 22px;
     }
 }
 
 @media only screen and (max-width: 769px) {
     .arrows {
-        top: 35%;
+        top: 37%;
         height: 10%;
     }
 
     .carouselIndex {
-        top: 73%;
+        top: 75%;
         font-size: 15px;
     }
 
@@ -223,12 +223,12 @@
 
 @media only screen and (max-width: 321px) {
     .arrows {
-        top: 13%;
+        top: 17%;
         height: 4%;
     }
 
     .carouselIndex {
-        top: 25%;
+        top: 29%;
         font-size: 13px;
     }
 
