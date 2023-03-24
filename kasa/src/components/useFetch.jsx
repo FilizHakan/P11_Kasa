@@ -10,33 +10,26 @@ const useFetch = (url)=>
     // useEffect is executed when page is displayed
     useEffect(()=>
     {
-        setTimeout(()=>
-        {
-            fetch(url)
-                .then((response)=>
-                {
-                    if(!response.ok)
-                    {
-                        throw Error("Pas de panique, c'est juste une erreur");
-                    }
-                    return response.json();
-                })
-                .then((data)=>
-                {
-                    setData(data);
-                    setDataLoading(false);
-                    setError(null);
-                })
+            const fetchData = async () => {
+                const result = await fetch(url);
+                const json = await result.json();
+
+                setData(json);
+                setDataLoading(false);
+            }
+            
+            fetchData()
                 .catch((err)=>
                 {
-                    console.log(err.message);
                     setError(err.message);
                     setDataLoading(false);
-                });
-        }, 500);       
+                    throw Error("Pas de panique, c'est juste une erreur");    
+                });       
     }, [url] );
 
     return { data, error, isDataLoading };
 };
     
 export default useFetch;
+
+
