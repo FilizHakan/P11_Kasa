@@ -19,9 +19,9 @@ function App()
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/accomodations/:id" element={<Accomodations />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/accomodations/:id" element={<Accomodations />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
       <Footer />

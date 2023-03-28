@@ -1,3 +1,18 @@
+.collapseAccomodation {
+  display: flex;
+  width: inherit;
+  gap: 140px;
+  margin-bottom: 86px;
+}
+
+.collapseAccoContainer{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  font-size: 18px;
+  font-weight: 400;
+}
+
 .errorMessage {
     color: #ff6060;
     display: flex;
@@ -37,4 +52,20 @@
       to {
         transform: rotate(360deg);
       }
+}
+
+@media screen and (max-width: 992px) {
+  .collapseAccomodation {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .collapseAccomodation {
+    flex-direction: column;
+  }
+
+  .collapseAccoContainer {
+    width: 100%;
+  }
 }

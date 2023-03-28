@@ -1,0 +1,31 @@
+.collapseAboutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.containerAbout {
+    width: 90%;
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 992px) 
+{
+    .collapseAboutContainer {
+      font-size: 20px;
+      width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) 
+{
+    .collapseAboutContainer {
+      gap: 20px;
+    }
+}
+
+
+
