@@ -13,18 +13,24 @@
 
 .countryTitle {
     width: 100%;
+    -webkit-animation: show-right 2s ease-in-out;
+            animation: show-right 2s ease-in-out;
 }
 
 .accomodationTitle {
     width: 100%;
     font-size: 36px;
     color: #ff6060;
+    -webkit-animation: show-right 2s ease-in-out;
+            animation: show-right 2s ease-in-out;
 }
 
 .city {
     width: 100%;
     color: #ff6060;
     font-weight: 500;
+    -webkit-animation: show-right 2s ease-in-out;
+            animation: show-right 2s ease-in-out;
 }
 
 .pageTitle {
@@ -41,7 +47,53 @@
     height: 45px;
     align-items: center;
     justify-content: space-between;
+    -webkit-animation: show-up 2s ease-in-out;
+            animation: show-up 2s ease-in-out;
 }
+
+@-webkit-keyframes show-right {
+    from {
+      opacity: 0;
+      transform: translateX(-3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0rem);
+    }
+  }
+
+@keyframes show-right {
+    from {
+      opacity: 0;
+      transform: translateX(-3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0rem);
+    }
+  }
+
+  @-webkit-keyframes show-left {
+    from {
+      opacity: 0;
+      transform: translateX(3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0rem);
+    }
+  }
+
+  @keyframes show-left {
+    from {
+      opacity: 0;
+      transform: translateX(3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0rem);
+    }
+  }
 
 .tagLists {
     display: flex;
@@ -66,6 +118,8 @@
 
 .hostContainer {
     width: 30%;
+    -webkit-animation: show-left 2s ease-in-out;
+            animation: show-left 2s ease-in-out;
 }
 
 .hostInfo {
@@ -74,6 +128,8 @@
     height: auto;
     align-items: center;
     justify-content: space-between;
+    -webkit-animation: show-left 2s ease-in-out;
+            animation: show-left 2s ease-in-out;
 }
 
 .hostName {
@@ -85,6 +141,8 @@
     margin-right: 20px;
     align-items: flex-end;
     flex-direction: column;
+    -webkit-animation: show-left 2s ease-in-out;
+            animation: show-left 2s ease-in-out;
 }
 
 .hostPicture {
@@ -92,6 +150,8 @@
     width: 64px;
     border-radius: 50%;
     height: 64px;
+    -webkit-animation: show-left 2s ease-in-out;
+            animation: show-left 2s ease-in-out;
 }
 
 

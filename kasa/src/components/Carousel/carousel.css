@@ -5,7 +5,31 @@
     overflow: hidden;
     border-radius: 25px;
     position: relative; 
+    -webkit-animation: show-up 0.8s ease-in-out;
+            animation: show-up 0.8s ease-in-out;
 }
+
+@-webkit-keyframes show-up {
+    from {
+      opacity: 0;
+      transform: translateY(10rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0rem);
+    }
+  }
+
+@keyframes show-up {
+    from {
+      opacity: 0;
+      transform: translateY(10rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0rem);
+    }
+  }
 
 .carouselImage {
     position: absolute;

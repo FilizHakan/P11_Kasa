@@ -10,7 +10,35 @@
   margin-top: 40px;
   border-radius: 25px;
   flex-wrap: wrap;
-  
+  -webkit-animation: fade-in 1.5s ease-in-out;
+         animation: fade-in 1.5s ease-in-out;
+}
+
+.cardLink {
+  -webkit-animation: show-up 0.8s ease-in-out;
+          animation: show-up 0.8s ease-in-out;
+}
+
+@-webkit-keyframes show-up {
+  from {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+@keyframes show-up {
+  from {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
 }
 
 @media only screen and (max-width: 819px) {
@@ -63,6 +91,24 @@
   height: 340px;
   background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%,rgba(0, 0, 0, 0.5) 100%);
   border-radius: 10px;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media only screen and (max-width: 819px) {

@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import arrowUp from "../../assets/arrow_closed.png";
+import arrowDown from "../../assets/arrow_open.png";
 import "./collapse.css";
 
 function Collapse(props) 
@@ -14,14 +14,14 @@ function Collapse(props)
     {
         setActiveState(setActive === "inactive" ? "active" : "inactive");
         setHeightState(setActive === "active" ? "0px" : `${content.current.scrollHeight}px`);
-        setRotateState(setRotate === "open" ? "close" : "open");
+        setRotateState(setRotate === "open" ? "closed" : "open");
     }
 
     return (
         <div className="collapseContainer">
             <button className={`collapseBtn ${setActive}`} onClick={toggle}>
                 <p className="collapseTitle">{props.title}</p>
-                <img className={`${setRotate}`} alt="open collapse" src={arrowUp} />
+                <img className={`${setRotate}`} alt="open collapse" src={arrowDown} />
             </button>
 
             <div className="collapseContent" ref={content} style={{ maxHeight: `${setHeight}` }}>
