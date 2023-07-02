@@ -1,8 +1,8 @@
-# KASA
+# PROJECT KASA
 
-Project KASA : Create a react app with React and React Router
+Project 11 : Create a react app with React and React Router
 
-# DEPENDENCIES
+## Dependencies
 
 - React [v18.2.0](https://fr.reactjs.org/).
 - React-dom [v18.2.0]
@@ -10,6 +10,8 @@ Project KASA : Create a react app with React and React Router
   `npm install react-router-dom@6`
 
 This project was bootstrapped with [Creat React App](https://create-react-app.dev/).
+
+## Installation
 
 - Create a new file folder
   `git init`
