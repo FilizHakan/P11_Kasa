@@ -70,19 +70,10 @@
     transition-duration: 500ms;
 }
 
-@media only screen and (max-width: 900px) 
-{
-    .open {
-        height: 30%;
-    }
-    .close{
-        height: 30%;
-    }
-}
 
 @media only screen and (max-width: 660px) {
     .collapseBtn{
-        height: 30px;
+        height: 40px;
     }
     
     .collapseTitle {
@@ -100,3 +91,18 @@
         padding-left: 11px;
     }
 }
+
+@media only screen and (max-width: 769px) {
+    .closed,
+    .open {
+        height: 90%;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .closed,
+    .open {
+        height: 210%;
+    }
+}
+
