@@ -5,9 +5,12 @@
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 
-# PROJECT KASA
+# CASE STUDY: KASA PROJECT
 
 Project 11 : Create a react app with React and React Router
+
+- Author: Filiz Hakan
+- Version: 1.0
 
 ## Dependencies
 
