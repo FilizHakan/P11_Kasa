@@ -1,6 +1,6 @@
-# P11_Kasa
+# KASA
 
-OPENCLASSROOMS Project 11 : Développez une application Web avec React et React Router
+Project KASA : Create a react app with React and React Router
 
 # DEPENDENCIES
 
