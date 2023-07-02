@@ -1,7 +1,7 @@
 .collapseContainer {
     display: flex;
     flex-direction: column;
-    padding-top: 40px;
+    padding-top: 20px;
     -webkit-animation: show-up 2s ease-in-out;
             animation: show-up 2s ease-in-out;
 }
@@ -10,7 +10,7 @@
     padding: 18px;
     cursor: pointer;
     border-style: none;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #ff6060;
     display: flex;
     height: 52px;
